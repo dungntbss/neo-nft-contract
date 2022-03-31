@@ -1,0 +1,189 @@
+{
+  "name" : "BSSNFT1",
+  "groups" : [ ],
+  "features" : { },
+  "supportedstandards" : [ "NEP-11" ],
+  "abi" : {
+    "methods" : [ {
+      "name" : "symbol",
+      "parameters" : [ ],
+      "offset" : 0,
+      "returntype" : "String",
+      "safe" : true
+    }, {
+      "name" : "decimals",
+      "parameters" : [ ],
+      "offset" : 7,
+      "returntype" : "Integer",
+      "safe" : true
+    }, {
+      "name" : "totalSupply",
+      "parameters" : [ ],
+      "offset" : 9,
+      "returntype" : "Integer",
+      "safe" : true
+    }, {
+      "name" : "balanceOf",
+      "parameters" : [ {
+        "name" : "owner",
+        "type" : "Hash160"
+      } ],
+      "offset" : 27,
+      "returntype" : "Integer",
+      "safe" : true
+    }, {
+      "name" : "tokensOf",
+      "parameters" : [ {
+        "name" : "owner",
+        "type" : "Hash160"
+      } ],
+      "offset" : 58,
+      "returntype" : "InteropInterface",
+      "safe" : true
+    }, {
+      "name" : "transfer",
+      "parameters" : [ {
+        "name" : "to",
+        "type" : "Hash160"
+      }, {
+        "name" : "tokenId",
+        "type" : "ByteArray"
+      }, {
+        "name" : "data",
+        "type" : "Array"
+      } ],
+      "offset" : 81,
+      "returntype" : "Boolean",
+      "safe" : false
+    }, {
+      "name" : "ownerOf",
+      "parameters" : [ {
+        "name" : "tokenId",
+        "type" : "ByteArray"
+      } ],
+      "offset" : 277,
+      "returntype" : "Hash160",
+      "safe" : true
+    }, {
+      "name" : "tokens",
+      "parameters" : [ ],
+      "offset" : 307,
+      "returntype" : "InteropInterface",
+      "safe" : true
+    }, {
+      "name" : "properties",
+      "parameters" : [ {
+        "name" : "tokenId",
+        "type" : "ByteArray"
+      } ],
+      "offset" : 322,
+      "returntype" : "Map",
+      "safe" : true
+    }, {
+      "name" : "_deploy",
+      "parameters" : [ {
+        "name" : "data",
+        "type" : "Any"
+      }, {
+        "name" : "update",
+        "type" : "Boolean"
+      } ],
+      "offset" : 504,
+      "returntype" : "Void",
+      "safe" : false
+    }, {
+      "name" : "update",
+      "parameters" : [ {
+        "name" : "script",
+        "type" : "ByteArray"
+      }, {
+        "name" : "manifest",
+        "type" : "String"
+      } ],
+      "offset" : 536,
+      "returntype" : "Void",
+      "safe" : false
+    }, {
+      "name" : "destroy",
+      "parameters" : [ ],
+      "offset" : 551,
+      "returntype" : "Void",
+      "safe" : false
+    }, {
+      "name" : "contractOwner",
+      "parameters" : [ ],
+      "offset" : 560,
+      "returntype" : "Hash160",
+      "safe" : true
+    }, {
+      "name" : "isContractOwner",
+      "parameters" : [ ],
+      "offset" : 563,
+      "returntype" : "Boolean",
+      "safe" : false
+    }, {
+      "name" : "mint",
+      "parameters" : [ {
+        "name" : "owner",
+        "type" : "Hash160"
+      }, {
+        "name" : "tokenId",
+        "type" : "ByteArray"
+      }, {
+        "name" : "properties",
+        "type" : "Map"
+      } ],
+      "offset" : 571,
+      "returntype" : "Void",
+      "safe" : false
+    }, {
+      "name" : "burn",
+      "parameters" : [ {
+        "name" : "tokenId",
+        "type" : "ByteArray"
+      } ],
+      "offset" : 991,
+      "returntype" : "Boolean",
+      "safe" : false
+    }, {
+      "name" : "_initialize",
+      "parameters" : [ ],
+      "offset" : 1404,
+      "returntype" : "Void",
+      "safe" : false
+    } ],
+    "events" : [ {
+      "name" : "Mint",
+      "parameters" : [ {
+        "name" : "arg1",
+        "type" : "Hash160"
+      }, {
+        "name" : "arg2",
+        "type" : "ByteArray"
+      }, {
+        "name" : "arg3",
+        "type" : "Map"
+      } ]
+    }, {
+      "name" : "Transfer",
+      "parameters" : [ {
+        "name" : "arg1",
+        "type" : "Hash160"
+      }, {
+        "name" : "arg2",
+        "type" : "Hash160"
+      }, {
+        "name" : "arg3",
+        "type" : "Integer"
+      }, {
+        "name" : "arg4",
+        "type" : "ByteArray"
+      } ]
+    } ]
+  },
+  "permissions" : [ ],
+  "trusts" : [ ],
+  "extra" : {
+    "author" : "NeitGnud"
+  }
+}

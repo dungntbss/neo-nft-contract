@@ -1,0 +1,21 @@
+{
+  "name" : "NonFungibleTokenContract",
+  "groups" : [ ],
+  "features" : { },
+  "supportedstandards" : [ ],
+  "abi" : {
+    "methods" : [ {
+      "name" : "helloWorld",
+      "parameters" : [ ],
+      "offset" : 0,
+      "returntype" : "String",
+      "safe" : false
+    } ],
+    "events" : [ ]
+  },
+  "permissions" : [ ],
+  "trusts" : [ ],
+  "extra" : {
+    "name" : "BSS.NonFungibleTokenContract"
+  }
+}

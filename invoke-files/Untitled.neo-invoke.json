@@ -1,0 +1,42 @@
+[
+  {
+    "contract": "BSSNFT",
+    "operation": "mint",
+    "args": [
+      "@bob",
+      "token-1",
+      {
+        "type": "Map",
+        "value": [
+          {
+            "key": "name",
+            "value": "asda"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "contract": "BSSNFT",
+    "operation": "ownerOf",
+    "args": [
+      "token-1"
+    ]
+  },
+  {
+    "contract": "BSSNFT",
+    "operation": "properties",
+    "args": [
+      "token-1"
+    ]
+  },
+  {
+    "contract": "BSSNFT",
+    "operation": "transfer",
+    "args": [
+      "@alice",
+      "token-1",
+      ""
+    ]
+  }
+]

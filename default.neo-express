@@ -1,0 +1,77 @@
+{
+  "magic": 2564219286,
+  "address-version": 53,
+  "consensus-nodes": [
+    {
+      "tcp-port": 50013,
+      "ws-port": 50014,
+      "rpc-port": 50012,
+      "wallet": {
+        "name": "node1",
+        "accounts": [
+          {
+            "private-key": "363f67d01e6add274f8d5df8252284ff699faede675584b962034e9b463264ff",
+            "script-hash": "NfWVjWwqSnXiYjQpdzK5GtJZykgvwVorge",
+            "label": null,
+            "is-default": true,
+            "contract": {
+              "script": "0c21023e9bd7bfaeffe95f5381f3d35356b08c961b4c8f3ecae76e6a7b1ba81b8dddbf4156e7b327",
+              "parameters": [
+                "Signature"
+              ]
+            }
+          },
+          {
+            "private-key": "363f67d01e6add274f8d5df8252284ff699faede675584b962034e9b463264ff",
+            "script-hash": "NVoS2SADBVJ2DXFY5pY9tURFdwsyAwrZDE",
+            "label": "Consensus MultiSigContract",
+            "is-default": false,
+            "contract": {
+              "script": "110c21023e9bd7bfaeffe95f5381f3d35356b08c961b4c8f3ecae76e6a7b1ba81b8dddbf11419ed0dc3a",
+              "parameters": [
+                "Signature"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "wallets": [
+    {
+      "name": "alice",
+      "accounts": [
+        {
+          "private-key": "24823cd7a4388bad8990d79fcb2ee541e1826abbf593510dc820c68d0128b5f9",
+          "script-hash": "NSjofLosu7C5NHareoLECqayXJ5pEgDMCE",
+          "label": null,
+          "is-default": true,
+          "contract": {
+            "script": "0c2102bc96853155b1bc7ae337e9d73c123f4df3d8fd28eba18f7c32b542d443966f3d4156e7b327",
+            "parameters": [
+              "Signature"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "bob",
+      "accounts": [
+        {
+          "private-key": "24899020a54d6ce9d6acd3e64b7bf4b201a525b94b61e3ce47f3e212a727864c",
+          "script-hash": "NW1hkHc8Hpvz77n3DdXHTWV43SvBVzCcqf",
+          "label": null,
+          "is-default": true,
+          "contract": {
+            "script": "0c2103dcbce9b5d3b30fc72c26e9f6d26222ee4596d9277ba2debd6ce1b25032d0ea264156e7b327",
+            "parameters": [
+              "Signature"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "settings": {}
+}
